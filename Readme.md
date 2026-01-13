@@ -1,18 +1,18 @@
 ## 🚀 SpaceX Falcon 9 Landing Prediction
 
-### 🛠 Metodología (Methodologies)
+### 🛠 Methodology
 
-1. **Data Collection**: Extracción de datos técnicos mediante la [SpaceX API](github.com) y suplementada con técnicas de *web scraping* desde [Wikipedia](en.wikipedia.org) para obtener registros históricos.
-2. **Data Wrangling**: Transformación de JSON a DataFrames, filtrado exclusivo de misiones **Falcon 9** y limpieza de valores nulos para garantizar la integridad del dataset.
-3. **EDA (Visual & SQL)**: Uso de consultas en [SQL](www.sqlite.org) y gráficos estadísticos para identificar tendencias clave, como la correlación entre el número de vuelo y la tasa de éxito.
-4. **Interactive & Predictive Analysis**: 
-   - Análisis geoespacial con [Folium](python-visualization.github.io) y dashboards interactivos en [Plotly Dash](dash.plotly.com).
-   - Evaluación de modelos de Machine Learning (**SVM, KNN, Decision Trees**), donde la **Regresión Logística** resultó superior.
+*   **Data Collection**: Technical data was extracted using the SpaceX API and supplemented with historical information obtained via web scraping from Wikipedia.
+*   **Data Wrangling**: Data was transformed from JSON to DataFrames, specifically filtering for Falcon 9 missions and removing null values to ensure dataset quality.
+*   **EDA (Visual & SQL)**: SQL queries and statistical visualizations were used to identify key trends, such as the relationship between flight number and success rate improvements.
+*   **Interactive & Predictive Analysis**: 
+    *   Performed geospatial analysis using Folium and developed interactive dashboards with Plotly Dash to segment success by payload and location.
+    *   In the predictive stage, after evaluating models such as SVM, KNN, and Decision Trees, Logistic Regression proved to be the superior algorithm with an accuracy of 0.83.
 
-### 📊 Resumen de Resultados (Summary of Results)
+### 📊 Summary of Results
 
-*   **Evolución de Éxito**: La tasa de éxito de SpaceX creció de un 0% inicial hasta alcanzar un **80-83%** a medida que aumentó la experiencia de vuelo.
-*   **Rendimiento por Órbita**: Las órbitas de baja energía (**SSO/ES-L1**) mostraron un éxito total (100%), mientras que las de alta energía (**GTO**) representaron la mayor dificultad de recuperación.
-*   **Sitios de Lanzamiento**: La plataforma **KSC LC 39A** destacó como la más confiable para cargas pesadas superiores a los 10,000 kg.
-*   **Modelo Predictivo**: El algoritmo de **Regresión Logística** se consolidó como el más efectivo con una precisión (accuracy) de **0.83**, siendo clave para predecir aterrizajes exitosos.
+*   **Success Trajectory**: SpaceX's success rate grew from 0.0 to 80% as flight experience increased.
+*   **Orbit Performance**: Low-energy orbits (SSO/ES-L1) were identified as completely successful, while high-energy orbits (GTO) presented the greatest difficulty in recovery.
+*   **Launch Sites**: The KSC LC 39A site stood out as the most reliable for heavy payloads exceeding 10,000 kg.
+*   **Predictive Modeling**: Logistic Regression was confirmed as the best predictive model with 83% accuracy, proving particularly effective in identifying successful landings.
 
